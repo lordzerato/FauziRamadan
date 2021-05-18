@@ -18,15 +18,11 @@ function App() {
         <TheNav />
       <Router>
         <Switch>
-          <Route path="/customers">
-            <TheHome />
-          </Route>
+          <Route path="/home" component={TheHome}/>
           <Route exact path="/">
-            <Redirect to={{ pathname: "/customers" }} />
+            <Redirect to={{ pathname: "/home" }} />
           </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
+          <Route path="*" component={NotFound}/>
         </Switch>
       </Router>
     </>

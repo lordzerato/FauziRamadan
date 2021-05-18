@@ -1,0 +1,33 @@
+.myNavBrand {
+  margin-right: 2rem;
+}
+
+.myNavLink {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.myNavLink:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+.active:hover {
+  color: #FFF;
+  text-decoration: underline 5px #0099FF;
+}
+
+.active {
+  text-decoration: underline 5px #0099FF;
+}
+
+.myCard {
+  width: 40vw;
+  min-width: 30vw;
+}
+
+.myCardBody {
+  width: 80%;
+}

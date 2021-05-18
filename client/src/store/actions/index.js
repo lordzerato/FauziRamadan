@@ -1,1 +1,0 @@
-export { default as a_customer } from './a_customer'
