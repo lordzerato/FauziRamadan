@@ -3,7 +3,6 @@ import { Navbar } from 'react-bootstrap'
 import {
   BrowserRouter as Router, NavLink,
  } from 'react-router-dom'
- import '../styles/index.css'
 
 export default function TheNav() {
 

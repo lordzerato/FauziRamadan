@@ -25,11 +25,11 @@ export default function tryFetch(username) {
 
       const response = await fetch(`https://api.github.com/users/${username}/repos`)
       const json = await response.json()
-      console.log(json);
       
       if (json.error) dispatch(fetchFailed(json.error))
       else dispatch(fetchDone(json))
     } catch (error) {
+      console.log(error);
       dispatch(fetchFailed(error))
     }
   }

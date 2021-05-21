@@ -1,7 +1,7 @@
 const initialState = {
   repositories: [],
   error: false,
-  loading: true
+  loading: false
 }
 
 const r_repository = (state = initialState, action) => {

@@ -14,8 +14,11 @@ export default function TheHome() {
         flexWrap: "wrap"
        }}>
          {
+           error? <h2 className="text-center mt-5"> { error } </h2> :
+           loading? <h2 className="text-center mt-5"> Loading </h2> :
            repositories.length < 1? 
-           <h2>Please, enter Github username first!</h2> :
+           <h2 className="text-center mt-5">Please, enter Github username first!</h2> :
+           repositories.length = 1? <RepoCards key="01" repo={repositories}/> :
            repositories.map(el => {
              return <RepoCards key={el.id} repo={el}/>
            })

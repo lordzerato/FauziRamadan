@@ -16,12 +16,14 @@ export default function RepoForm() {
 
   return (
     <>
-      <h3 class="text-center mt-5">GitHub API</h3>
-      <form id="gitHubForm" class="form-inline mx-auto">
-        <input class="form-control mb-5 ml-5" type="text" placeholder="GitHub Username"
-         onChange={ handleChange }/>
-        <input type="button" class="btn btn-primary ml-2 mb-5" value="Submit"
-         onClick={ getResponse }/>
+      <h3 className="text-center mt-5">GitHub API</h3>
+      <form id="gitHubForm" className="form-inline">
+        <div class="form-group mx-auto">
+          <input className="form-control mb-3" type="text" placeholder="GitHub Username"
+          onChange={ handleChange }/>
+          <input type="button" className="btn btn-primary ml-2 mb-3" value="Submit"
+          onClick={ getResponse }/>
+         </div>
       </form>
     </>
   )
